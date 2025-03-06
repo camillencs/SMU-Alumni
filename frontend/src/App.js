@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './Pages/homepage';
+import Login from './Pages/login';
+import EmployeeDashboard from './Pages/EmployeePage/EmployeeDashboard';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/EmployeeDashboard" element={<EmployeeDashboard />} />
       </Routes>
     </Router>
   );
